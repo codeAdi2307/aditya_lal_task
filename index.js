@@ -19,7 +19,7 @@ async function connection() {
     
     console.log("Connected to MongoDB");
 
-    app.listen( 8000, () => {
+    app.listen( process.env.PORT||8000, () => {
       console.log(`Listening to server and connected to db  at ${8000}`);
     });
 
